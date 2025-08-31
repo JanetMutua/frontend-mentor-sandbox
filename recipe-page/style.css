@@ -1,0 +1,72 @@
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+  width: 680px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 2rem auto;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+/* Header image styles */
+
+.header-img {
+  width: -95%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.header-img .top-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+p {
+  line-height: 25px;
+}
+
+/* Prep time styling */
+
+.prep-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.prep-title {
+  color: hsl(332, 51%, 32%);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* span styling */
+.bolded {
+  font-weight: 600;
+}
+
+/* headings */
+h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+/* hr */
+
+hr {
+  background-color: hsl(30, 10%, 34%);
+}
+
+/* lists styling */
+
+ul,
+ol {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+li {
+  margin: 0.5rem 1rem;
+  padding-left: 0.5rem;
+  line-height: 1.8rem;
+}
