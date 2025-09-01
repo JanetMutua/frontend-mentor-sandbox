@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.main-container {
+  margin: 4rem auto;
+  background-color: aquamarine;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side {
+  background-color: burlywood;
+  width: 50%;
+}
+
+/* Bottom attribution section */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
