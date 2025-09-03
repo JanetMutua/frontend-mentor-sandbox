@@ -1,22 +1,32 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(30, 38%, 92%);
 }
 
 .main-container {
   margin: 4rem auto;
-  background-color: aquamarine;
-  width: 500px;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 800px;
   display: flex;
   justify-content: space-between;
 }
 
 .left-side {
-  background-color: burlywood;
+  background-image: url(./images/image-product-desktop.jpg);
   width: 50%;
+  height: 500px;
+  object-position: center;
+  object-fit: cover;
+}
+
+.right-side {
+  width: 50%;
+  padding: 12px;
 }
 
 /* Bottom attribution section */

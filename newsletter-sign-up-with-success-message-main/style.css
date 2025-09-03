@@ -1,0 +1,45 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  font-size: 16px;
+  font-family: "Roboto", Poppins;
+}
+
+.container,
+.container-success {
+  max-width: 900px;
+  height: 500px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  margin: 2em auto;
+  padding: 2em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-side-img {
+  width: 45%;
+  height: 450px;
+  background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+  
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
