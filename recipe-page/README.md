@@ -53,5 +53,5 @@ I'm still learning how to make pages responsive. I didn't apply media queries he
 ## Author
 
 - Website - [To be added](#)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@JanetMutua](https://www.frontendmentor.io/profile/JanetMutua)
 - Twitter - [@mu_mbua](https://x.com/mu_mbua_)
