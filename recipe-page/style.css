@@ -1,26 +1,41 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  font-weight: normal;
 }
 
 .container {
-  width: 680px;
+  max-width: 700px;
+  min-width: 300px;
   background-color: hsl(0, 0%, 100%);
-  margin: 2rem auto;
-  border-radius: 20px;
-  padding: 30px;
+  margin: 4rem auto;
+  border-radius: 15px;
+  padding: 25px;
 }
 
-/* Header image styles */
-
-.header-img {
-  width: -95%;
+.top-img {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 10px;
   margin: 0 auto;
   object-fit: cover;
-}
-
-.header-img .top-img {
-  width: 100%;
-  border-radius: 10px;
+  object-position: center;
 }
 
 p {
@@ -31,8 +46,8 @@ p {
 
 .prep-time {
   background-color: hsl(330, 100%, 98%);
-  padding: 16px;
-  border-radius: 10px;
+  padding: 1rem;
+  border-radius: 15px;
 }
 
 .prep-title {
@@ -49,12 +64,20 @@ p {
 /* headings */
 h2 {
   color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", Poppins;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "Young Serif", Poppins;
+  font-weight: normal;
+  color: hsl(24, 5%, 18%);
 }
 
 /* hr */
 
 hr {
-  background-color: hsl(30, 10%, 34%);
+  background-color: hsl(30, 18%, 87%);
 }
 
 /* lists styling */
@@ -69,4 +92,29 @@ li {
   margin: 0.5rem 1rem;
   padding-left: 0.5rem;
   line-height: 1.8rem;
+}
+
+/* table sytling */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  text-align: left;
+}
+td {
+  padding: 0.8rem;
+}
+
+tr:last-of-type {
+  border: none;
+}
+
+.nutri-value {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+  text-align: left;
 }
