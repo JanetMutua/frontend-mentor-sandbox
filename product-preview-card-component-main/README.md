@@ -13,8 +13,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
   - [Author](#author)
 
 ## Overview
@@ -31,8 +29,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/recipe-page-challenge-oCu46zWpP4)
-- Live Site URL: [Add live site URL here](https://product-preview-card-component-sable.vercel.app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/product-preview-card-component-challenge-mEgDOMf_v5)
+- Live Site URL: [Product preview card](https://product-preview-card-eight-nu.vercel.app/)
 
 ## My process
 
