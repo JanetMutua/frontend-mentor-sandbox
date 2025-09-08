@@ -24,6 +24,8 @@
 body {
   background-color: var(--cream);
   font-size: 14px;
+  width: 100%;
+  height: 100vh;
 }
 
 .main-container {
@@ -31,8 +33,7 @@ body {
   flex-direction: row;
   margin: 7rem auto;
   background-color: var(--white);
-  width: 700px;
-  max-width: 1440px;
+  max-width: 700px;
   min-width: 375px;
   border-radius: 0.6rem;
   overflow: hidden;
@@ -143,10 +144,9 @@ button:hover {
   padding-right: 0.5rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .main-container {
     width: 92%;
-    min-width: unset;
     flex-direction: column;
     margin: 4.2rem auto;
     border-radius: 0.8rem;

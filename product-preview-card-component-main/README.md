@@ -23,11 +23,11 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 #### Desktop view
 
-![Desktop view](./assets/images/recipe-page-finalpng)
+![Desktop view](./images/desktop-final.png)
 
 #### Mobile view
 
-![Mobile view](./assets/images/recipe-page-mobile.png)
+![Mobile view](./images/mobile_final.png)
 
 ### Links
 
@@ -41,10 +41,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - Semantic HTML5 markup
 - CSS3
 - Mobile-first workflow
-
-### What I learned
-
-### Continued development
 
 ## Author
 
