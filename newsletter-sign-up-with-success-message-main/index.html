@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -16,74 +15,81 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <!-- Newsletter sign up form -->
-    <div class="container">
-      <div class="left-side">
-        <h1 class="header">Stay updated!</h1>
-        <p class="intro-text">
-          Join 60,000+ product managers receiving monthly updates on:
-        </p>
+    <main>
+      <!-- Newsletter sign up form -->
+      <div class="container">
+        <section class="left-side">
+          <header>
+            <h1 class="header">Stay updated!</h1>
+            <p class="intro-text">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+          </header>
 
-        <!-- checklist section -->
-        <div class="checklist">
-          <div class="checklist-one">
-            <div class="icon"></div>
-            <span>Product discovery and building what matters</span>
-          </div>
+          <!-- checklist section -->
+          <section class="checklist">
+            <div class="checklist-one">
+              <div class="icon"></div>
+              <span>Product discovery and building what matters</span>
+            </div>
 
-          <div class="checklist-two">
-            <div class="icon"></div>
-            <span>Measuring to ensure updates are a success</span>
-          </div>
+            <div class="checklist-two">
+              <div class="icon"></div>
+              <span>Measuring to ensure updates are a success</span>
+            </div>
 
-          <div class="checklist-three">
-            <div class="icon"></div>
-            <span>And much more!</span>
-          </div>
-        </div>
+            <div class="checklist-three">
+              <div class="icon"></div>
+              <span>And much more!</span>
+            </div>
+          </section>
 
-        <!-- Sign-up form  -->
-        <form action="#" method="post">
-          <label for="email"
-            >Email address
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="email@company.com"
-              required
-          /></label>
-          <button type="submit">Subscribe to monthly newsletter</button>
-        </form>
+          <!-- Sign-up form  -->
+          <form action="#" method="post">
+            <label for="email"
+              >Email address
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email@company.com"
+                required
+            /></label>
+            <button type="submit">Subscribe to monthly newsletter</button>
+          </form>
+        </section>
+
+        <!-- right side of card -->
+        <section class="right-side">
+          <div class="right-side-img"></div>
+        </section>
       </div>
-      <div class="right-side-img"></div>
-    </div>
+      <!-- Newsletter form end -->
 
-    <!-- Sign-up form end -->
+      <!-- Success message start -->
+      <div class="container-success">
+        <div class="icon-success"></div>
+        <h1 class="header">Thanks for subscribing!</h1>
+        <p>
+          Thanks for subscribing! A confirmation email has been sent to
+          ash@loremcompany.com. Please open it and click the button inside to
+          confirm your subscription.
+        </p>
+        <button>Dismiss message</button>
+      </div>
+      <!-- Success message end -->
+    </main>
 
-    <!-- Success message start -->
-    <div class="container-success">
-      <div class="icon-success"></div>
-      <h1 class="header">Thanks for subscribing!</h1>
-      <p>
-        Thanks for subscribing! A confirmation email has been sent to
-        ash@loremcompany.com. Please open it and click the button inside to
-        confirm your subscription.
-      </p>
-      <button>Dismiss message</button>
-    </div>
-
-    <!-- Success message end -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/JanetMutua">Your Name Here</a>.
-    </div>
+    <!-- footer section -->
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/JanetMutua">Janet Mutua</a>.
+      </div>
+    </footer>
   </body>
 </html>
