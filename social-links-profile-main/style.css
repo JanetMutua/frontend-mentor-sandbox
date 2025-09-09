@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 7rem auto;
+  margin: 7rem auto 1rem;
   background-color: hsl(0, 0%, 12%);
   max-width: 380px;
   text-align: center;
