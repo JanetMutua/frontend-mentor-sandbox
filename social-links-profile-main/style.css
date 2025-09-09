@@ -1,0 +1,79 @@
+/* importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter";
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 7rem auto;
+  background-color: hsl(0, 0%, 12%);
+  max-width: 380px;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+
+/* image styling */
+.avatar {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  margin: 1rem 0;
+}
+
+/* styling the name and location */
+
+.user-name {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.user-location {
+  color: hsl(75, 94%, 57%);
+  margin: 0.5em 0;
+  font-weight: 400;
+}
+
+.user-role {
+  margin: 1.2em 0;
+  font-weight: 400;
+}
+
+/* styling the links section */
+
+.links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin: 0.5em 0;
+  padding: 1em 1.2em;
+  border-radius: 0.5em;
+  background-color: hsl(0, 0%, 20%);
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+
+a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
