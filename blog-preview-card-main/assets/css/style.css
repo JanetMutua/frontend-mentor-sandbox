@@ -20,7 +20,7 @@ body {
   max-width: 350px;
   height: max-content;
   background-color: hsl(0, 0%, 100%);
-  margin: 7rem auto;
+  margin: 9.5rem auto;
   padding: 1.2rem;
   border-radius: 1rem;
   box-shadow: 8px 8px hsl(0, 0%, 7%);
@@ -43,11 +43,11 @@ body {
   gap: 1em;
   flex-wrap: nowrap;
 }
-.card__header__text h2 {
+.card__header__text h1 {
   margin-bottom: 0.7em;
   font-weight: 800;
 }
-.card__header__text h2:hover {
+.card__header__text h1:hover {
   color: hsl(47, 88%, 63%);
 }
 .card__header__text .date {

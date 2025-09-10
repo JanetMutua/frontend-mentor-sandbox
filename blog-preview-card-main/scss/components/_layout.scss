@@ -22,7 +22,7 @@ body {
   max-width: 350px;
   height: max-content;
   background-color: $white;
-  margin: auto;
+  margin: 9.5rem auto;
   padding: 1.2rem;
   border-radius: 1rem;
   box-shadow: 8px 8px $gray-950;
@@ -41,7 +41,7 @@ body {
       // loading flexbox with a mixin
       @include flex-item($direction: column-reverse);
 
-      h2 {
+      h1 {
         margin-bottom: 0.7em;
         font-weight: $font-bold;
 
