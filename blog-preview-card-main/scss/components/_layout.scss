@@ -1,0 +1,98 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: $yellow;
+  font-family: $font;
+  font-size: $font-size;
+}
+
+.card {
+  width: 100%;
+  max-width: 350px;
+  height: max-content;
+  background-color: $white;
+  margin: 7rem auto;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  box-shadow: 8px 8px $gray-950;
+
+  &__header {
+    // loading flexbox with mixin
+    @include flex-item;
+
+    img {
+      width: 100%;
+      height: fit-content;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
+    &__text {
+      // loading flexbox with a mixin
+      @include flex-item($direction: column-reverse);
+
+      h2 {
+        margin-bottom: 0.7em;
+        font-weight: $font-bold;
+
+        &:hover {
+          color: $yellow;
+        }
+      }
+
+      .date {
+        font-weight: $font-medium;
+        font-size: 14px;
+        color: $gray-950;
+      }
+
+      .tag {
+        width: 85px;
+        padding: 0.45rem;
+        background-color: $yellow;
+        font-weight: $font-bold;
+        border-radius: 0.2rem;
+      }
+    }
+  }
+
+  &__text {
+    color: $gray-500;
+    margin-bottom: 1em;
+    width: 100%;
+    font-weight: $font-medium;
+  }
+
+  &__author {
+    @include flex-item($direction: row, $gap: 0.8em);
+    align-items: center;
+
+    img {
+      width: 35px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+    .name {
+      color: $gray-950;
+      font-weight: $font-bold;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90%;
+    max-width: 320px;
+    padding: 1rem;
+  }
+}

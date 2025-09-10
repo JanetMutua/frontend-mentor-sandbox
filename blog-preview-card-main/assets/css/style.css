@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 350px;
+  height: max-content;
+  background-color: hsl(0, 0%, 100%);
+  margin: 7rem auto;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  box-shadow: 8px 8px hsl(0, 0%, 7%);
+}
+.card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  flex-wrap: nowrap;
+}
+.card__header img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.card__header__text {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1em;
+  flex-wrap: nowrap;
+}
+.card__header__text h2 {
+  margin-bottom: 0.7em;
+  font-weight: 800;
+}
+.card__header__text h2:hover {
+  color: hsl(47, 88%, 63%);
+}
+.card__header__text .date {
+  font-weight: 500;
+  font-size: 14px;
+  color: hsl(0, 0%, 7%);
+}
+.card__header__text .tag {
+  width: 85px;
+  padding: 0.45rem;
+  background-color: hsl(47, 88%, 63%);
+  font-weight: 800;
+  border-radius: 0.2rem;
+}
+.card__text {
+  color: hsl(0, 0%, 42%);
+  margin-bottom: 1em;
+  width: 100%;
+  font-weight: 500;
+}
+.card__author {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8em;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.card__author img {
+  width: 35px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+.card__author .name {
+  color: hsl(0, 0%, 7%);
+  font-weight: 800;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90%;
+    max-width: 320px;
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,6 @@
+@mixin flex-item($display: flex, $wrap: nowrap, $direction: column, $gap: 1em) {
+  display: $display;
+  flex-direction: $direction;
+  gap: $gap;
+  flex-wrap: $wrap;
+}
