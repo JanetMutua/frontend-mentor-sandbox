@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend-mentor](https://your-solution-url.com)
+- Solution URL: [Frontend-mentor](https://www.frontendmentor.io/solutions/blog-preview-card-challenge-xPbzMDl0zD)
 - Live Site URL: [Blog preview card](http://blog-preview-card-three-ochre.vercel.app/)
 
 ## My process
