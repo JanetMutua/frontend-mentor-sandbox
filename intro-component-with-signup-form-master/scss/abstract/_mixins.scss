@@ -1,0 +1,8 @@
+@use "./variables" as *;
+
+@mixin display($display: flex, $align: center, $direction: row, $gap: 1em) {
+  display: $display;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: $gap;
+}

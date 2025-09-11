@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100dvh;
+  padding: 2rem;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(../../assets/images/bg-intro-desktop.png);
+  overflow: hidden;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 3em;
+  max-width: 85%;
+  height: fit-content;
+  margin: 5rem auto;
+}
+.hero__header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1em;
+  color: #fff;
+  width: 50%;
+}
+.hero__header h1 {
+  font-weight: 700;
+  font-size: 3em;
+  transition: all 0.5s ease;
+}
+.hero__header h1:hover {
+  transform: rotate(-7deg);
+}
+.hero__header p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.hero__form {
+  display: flex;
+  align-items: normal;
+  flex-direction: column;
+  gap: 1.2em;
+  width: 60%;
+}
+.hero__form .subscription {
+  width: 100%;
+}
+.hero__form .subscription__btn {
+  display: block;
+  width: 100%;
+  background-color: hsl(248, 32%, 49%);
+  text-decoration: none;
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+  padding: 1rem 0;
+  border-radius: 0.45rem;
+  box-shadow: 0 5px 2px 0 rgba(61.659, 59.67, 72.93, 0.3);
+  transition: all 0.3s ease-in;
+}
+.hero__form .subscription__btn span {
+  font-weight: 600;
+  color: #fff;
+}
+.hero__form .subscription__btn:hover {
+  transform: rotate(-2deg);
+  box-shadow: 5px 5px 4px 4px rgba(95.6284, 84.966, 164.934, 0.5);
+}
+.hero__form .form {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 2.2rem;
+  box-shadow: 0 6px 3px 0 rgba(61.659, 59.67, 72.93, 0.3);
+}
+.hero__form .form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.8em;
+  padding: 1rem 0;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 1rem;
+  border: 1px solid rgba(61.659, 59.67, 72.93, 0.25);
+  border-radius: 0.3rem;
+  outline-width: 1px;
+  outline-color: rgba(61.659, 59.67, 72.93, 0.3);
+}
+.hero__form .form__btn {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 0.3rem;
+  margin-bottom: 0.8em;
+  border: 1px solid hsl(154, 59%, 51%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 3px 2px 0 rgba(56.3295, 203.7705, 139.8794, 0.5);
+}
+.hero__form .form__btn:hover {
+  box-shadow: 3px 3px 2px 2px rgba(56.3295, 203.7705, 139.8794, 0.5);
+  font-weight: 700;
+  background-color: rgba(56.3295, 203.7705, 139.8794, 0.95);
+}
+.hero__form .form__terms {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+}
+.hero__form .form__terms .terms {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+.hero__form .form:hover {
+  box-shadow: 5px 5px 4px 4px rgba(95.6284, 84.966, 164.934, 0.4);
+}
+
+@media (max-width: 950px) {
+  main {
+    padding: 0;
+  }
+  .hero {
+    width: 100%;
+  }
+}
+@media (max-width: 660px) {
+  main {
+    padding: 1em;
+  }
+  .hero {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .hero__header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .hero__header h1 {
+    font-size: 2em;
+  }
+  .hero__form {
+    width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  main {
+    padding: 0;
+    background-image: url(../../assets/images/bg-intro-mobile.png);
+  }
+  .hero {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .hero__header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .hero__header h1 {
+    font-size: 2em;
+  }
+  .hero__form {
+    width: 100%;
+  }
+  .hero__form .subscription__btn {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

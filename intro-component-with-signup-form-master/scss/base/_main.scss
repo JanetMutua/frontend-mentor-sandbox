@@ -1,0 +1,221 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+// resets
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+  font-family: $font-fam;
+}
+
+main {
+  width: 100%;
+  height: 100dvh;
+  padding: 2rem;
+  background-color: $red;
+  background-image: url(../../assets/images/bg-intro-desktop.png);
+  overflow: hidden;
+}
+
+.hero {
+  // using mixins for flexbox
+  @include display($gap: 3em);
+  max-width: 85%;
+  height: fit-content;
+  margin: 5rem auto;
+
+  &__header {
+    // using mixins for flexbox
+    @include display($align: flex-start, $direction: column);
+    color: $white;
+    width: 50%;
+
+    h1 {
+      font-weight: 700;
+      font-size: 3em;
+      transition: all 0.5s ease;
+
+      &:hover {
+        transform: rotate(-7deg);
+      }
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5rem;
+    }
+  }
+
+  &__form {
+    // using mixins for flexbox
+    @include display($direction: column, $gap: 1.2em, $align: normal);
+    width: 60%;
+
+    .subscription {
+      width: 100%;
+
+      &__btn {
+        display: block;
+        width: 100%;
+        background-color: $purple;
+        text-decoration: none;
+        text-align: center;
+        color: $purple-light;
+        padding: 1rem 0;
+
+        border-radius: 0.45rem;
+        box-shadow: 0 5px 2px 0 rgba($gray, 0.3);
+        transition: all 0.3s ease-in;
+
+        span {
+          font-weight: 600;
+          color: $white;
+        }
+
+        &:hover {
+          transform: rotate(-2deg);
+          box-shadow: 5px 5px 4px 4px rgba($purple, 0.5);
+        }
+      }
+    }
+
+    .form {
+      width: 100%;
+      background-color: $white;
+      border-radius: 0.5rem;
+      padding: 2.2rem;
+      box-shadow: 0 6px 3px 0 rgba($gray, 0.3);
+
+      input {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.8em;
+        padding: 1rem 0;
+        font-size: 14px;
+        font-weight: 600;
+        padding-left: 1rem;
+        border: 1px solid rgba($gray, 0.25);
+        border-radius: 0.3rem;
+        outline-width: 1px;
+        outline-color: rgba($gray, 0.3);
+      }
+
+      &__btn {
+        width: 100%;
+        padding: 1rem 0;
+        background-color: $green;
+        border-radius: 0.3rem;
+        margin-bottom: 0.8em;
+        border: 1px solid $green;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: 0 3px 2px 0 rgba($green, 0.5);
+
+        &:hover {
+          box-shadow: 3px 3px 2px 2px rgba($green, 0.5);
+          font-weight: 700;
+          background-color: rgba($green, 0.95);
+        }
+      }
+
+      &__terms {
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        color: $purple-light;
+
+        .terms {
+          text-decoration: none;
+          color: $red;
+          font-weight: 600;
+        }
+      }
+
+      &:hover {
+        box-shadow: 5px 5px 4px 4px rgba($purple, 0.4);
+      }
+    }
+  }
+}
+
+// tablets
+
+@media (max-width: 950px) {
+  main {
+    padding: 0;
+  }
+
+  .hero {
+    width: 100%;
+  }
+}
+
+@media (max-width: 660px) {
+  main {
+    padding: 1em;
+  }
+  .hero {
+    flex-direction: column;
+    width: 100%;
+
+    padding: 0;
+
+    &__header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1em;
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+
+    &__form {
+      width: 100%;
+    }
+  }
+}
+
+// mobile
+
+@media (max-width: 390px) {
+  main {
+    padding: 0;
+    background-image: url(../../assets/images/bg-intro-mobile.png);
+  }
+  .hero {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+
+    &__header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1em;
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+
+    &__form {
+      width: 100%;
+
+      .subscription__btn {
+        width: 95%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
