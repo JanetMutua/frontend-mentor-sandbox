@@ -28,7 +28,7 @@ main {
   flex-direction: row;
   gap: 3em;
   max-width: 85%;
-  height: fit-content;
+  height: max-content;
   margin: 5rem auto;
 }
 .hero__header {

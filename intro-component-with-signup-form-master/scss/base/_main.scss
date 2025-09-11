@@ -29,7 +29,7 @@ main {
   // using mixins for flexbox
   @include display($gap: 3em);
   max-width: 85%;
-  height: fit-content;
+  height: max-content;
   margin: 5rem auto;
 
   &__header {
