@@ -9,13 +9,13 @@
 
 body {
   width: 100%;
-  height: 100dvh;
+  height: fit-content;
   font-family: "Poppins", sans-serif;
 }
 
 main {
   width: 100%;
-  height: 100dvh;
+  height: fit-content;
   padding: 2rem;
   background-color: hsl(0, 100%, 74%);
   background-image: url(../../assets/images/bg-intro-desktop.png);
@@ -28,7 +28,6 @@ main {
   flex-direction: row;
   gap: 3em;
   max-width: 85%;
-  height: max-content;
   margin: 5rem auto;
 }
 .hero__header {
@@ -184,10 +183,6 @@ main {
   }
   .hero__form {
     width: 100%;
-  }
-  .hero__form .subscription__btn {
-    width: 95%;
-    margin: 0 auto;
   }
 }
 
