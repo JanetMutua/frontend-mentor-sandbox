@@ -88,10 +88,13 @@ main {
   padding: 2.2rem;
   box-shadow: 0 6px 3px 0 rgba(61.659, 59.67, 72.93, 0.3);
 }
-.hero__form .form label {
+.hero__form .form .input-fields {
+  position: relative;
+}
+.hero__form .form .input-fields label {
   display: none;
 }
-.hero__form .form input {
+.hero__form .form .input-fields input {
   display: block;
   width: 100%;
   margin-bottom: 0.8em;
@@ -103,6 +106,20 @@ main {
   border-radius: 0.3rem;
   outline-width: 1px;
   outline-color: rgba(61.659, 59.67, 72.93, 0.3);
+}
+.hero__form .form .input-fields .error-icon {
+  display: none;
+}
+.hero__form .form .input-fields .error {
+  font-size: 0.7rem;
+  text-align: right;
+  color: hsl(0, 100%, 74%);
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 0.3em;
+}
+.hero__form .form .input-fields .error-display {
+  border: 1px solid hsl(0, 100%, 74%);
 }
 .hero__form .form__btn {
   width: 100%;
@@ -136,20 +153,6 @@ main {
 .hero__form .form:hover {
   box-shadow: 2px 3px 6px 7px rgba(95.6284, 84.966, 164.934, 0.3);
   transition: all 0.3s ease;
-}
-.hero__form .form .error {
-  font-size: 0.7rem;
-  text-align: right;
-  color: hsl(0, 100%, 74%);
-  font-weight: 500;
-  font-style: italic;
-  margin-top: 5px;
-}
-.hero__form .form .error-icon {
-  background-image: url(../../assets/images/icon-error.svg);
-}
-.hero__form .form .error-display {
-  border: 1px solid hsl(0, 100%, 74%);
 }
 
 @media (max-width: 950px) {

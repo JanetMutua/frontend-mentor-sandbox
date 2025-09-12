@@ -94,22 +94,53 @@ main {
       padding: 2.2rem;
       box-shadow: 0 6px 3px 0 rgba($gray, 0.3);
 
-      label {
-        display: none;
-      }
+      .input-fields {
+        position: relative;
 
-      input {
-        display: block;
-        width: 100%;
-        margin-bottom: 0.8em;
-        padding: 1rem 0;
-        font-size: 14px;
-        font-weight: 600;
-        padding-left: 1rem;
-        border: 1px solid rgba($gray, 0.25);
-        border-radius: 0.3rem;
-        outline-width: 1px;
-        outline-color: rgba($gray, 0.3);
+        label {
+          display: none;
+        }
+
+        input {
+          display: block;
+          width: 100%;
+          margin-bottom: 0.8em;
+          padding: 1rem 0;
+          font-size: 14px;
+          font-weight: 600;
+          padding-left: 1rem;
+          border: 1px solid rgba($gray, 0.25);
+          border-radius: 0.3rem;
+          outline-width: 1px;
+          outline-color: rgba($gray, 0.3);
+        }
+
+        .error-icon {
+          display: none;
+        }
+
+        // error elements styling
+
+        .error {
+          font-size: 0.7rem;
+          text-align: right;
+          color: $red;
+          font-weight: 500;
+          font-style: italic;
+          margin-bottom: 0.3em;
+        }
+
+        .error-display {
+          border: 1px solid $red;
+        }
+
+        // .error-icon-active {
+        //   position: absolute;
+        //   right: 1rem;
+        //   transform: translateY(-240%);
+        //   height: 1.2rem;
+        //   width: 1.2rem;
+        // }
       }
 
       &__btn {
@@ -149,29 +180,6 @@ main {
         box-shadow: 2px 3px 6px 7px rgba($purple, 0.3);
         transition: all 0.3s ease;
       }
-
-      // error elements styling
-
-      .error {
-        font-size: 0.7rem;
-        text-align: right;
-        color: $red;
-        font-weight: 500;
-        font-style: italic;
-        // margin-bottom: 0.2rem;
-        margin-top: 5px;
-      }
-      .error-icon {
-        background-image: url(../../assets/images/icon-error.svg);
-      }
-
-      .error-display {
-        border: 1px solid $red;
-      }
-
-      // .error-display::after{
-
-      // }
     }
   }
 }

@@ -3,7 +3,7 @@ let first__name = document.getElementById("first-name");
 let last__name = document.getElementById("last-name");
 let email__data = document.getElementById("email");
 let password = document.getElementById("password");
-let form = document.getElementById("free-trial-form");
+
 let btn = document.getElementById("submit-btn");
 
 btn.addEventListener("click", (event) => {
@@ -56,7 +56,6 @@ function isEmailValid(email) {
 // displaying errors
 function displayError(ui__element, message) {
   let error__element = document.createElement("div");
-  let error__icon = document.createElement("i");
 
   // setting error elements' class
   error__element.className = "error";
