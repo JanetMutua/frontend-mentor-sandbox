@@ -88,6 +88,9 @@ main {
   padding: 2.2rem;
   box-shadow: 0 6px 3px 0 rgba(61.659, 59.67, 72.93, 0.3);
 }
+.hero__form .form label {
+  display: none;
+}
 .hero__form .form input {
   display: block;
   width: 100%;
@@ -116,8 +119,8 @@ main {
 }
 .hero__form .form__btn:hover {
   box-shadow: 3px 3px 2px 2px rgba(56.3295, 203.7705, 139.8794, 0.5);
+  transition: all 0.3s ease;
   font-weight: 700;
-  background-color: rgba(56.3295, 203.7705, 139.8794, 0.95);
 }
 .hero__form .form__terms {
   font-weight: 500;
@@ -131,7 +134,22 @@ main {
   font-weight: 600;
 }
 .hero__form .form:hover {
-  box-shadow: 5px 5px 4px 4px rgba(95.6284, 84.966, 164.934, 0.4);
+  box-shadow: 2px 3px 6px 7px rgba(95.6284, 84.966, 164.934, 0.3);
+  transition: all 0.3s ease;
+}
+.hero__form .form .error {
+  font-size: 0.7rem;
+  text-align: right;
+  color: hsl(0, 100%, 74%);
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 5px;
+}
+.hero__form .form .error-icon {
+  background-image: url(../../assets/images/icon-error.svg);
+}
+.hero__form .form .error-display {
+  border: 1px solid hsl(0, 100%, 74%);
 }
 
 @media (max-width: 950px) {
