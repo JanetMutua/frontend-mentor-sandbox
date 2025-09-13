@@ -17,12 +17,16 @@ function validateFormInputs(event__data) {
   // check if first name and last name are filled
   if (first__name.value.trim() === "") {
     isFormValid = false;
+    first__name.value = "";
+    first__name.placeholder = "";
     displayError(first__name, "First Name cannot be empty");
   }
 
   // check if last name is filled
   if (last__name.value.trim() === "") {
     isFormValid = false;
+    last__name.value = "";
+    last__name.placeholder = "";
     displayError(last__name, "Last Name cannot be empty");
   }
 
@@ -37,6 +41,8 @@ function validateFormInputs(event__data) {
   // check if password is 8 characters long
   if (password.value < 8) {
     isFormValid = false;
+    password.value = "";
+    password.placeholder = "";
     displayError(password, "Password cannot be empty");
   }
 
