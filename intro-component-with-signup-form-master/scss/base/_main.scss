@@ -96,6 +96,9 @@ main {
 
       .input-fields {
         position: relative;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0.5rem;
 
         label {
           display: none;
@@ -104,22 +107,39 @@ main {
         input {
           display: block;
           width: 100%;
-          margin-bottom: 0.8em;
-          padding: 1rem 0;
+          height: 3.5em;
+          margin-top: 0.8em;
+          padding: 1rem 0 1rem 1rem;
           font-size: 14px;
-          font-weight: 600;
-          padding-left: 1rem;
+          color: $gray;
+          font-weight: 700;
           border: 1px solid rgba($gray, 0.25);
           border-radius: 0.3rem;
-          outline-width: 1px;
-          outline-color: rgba($gray, 0.3);
+
+          &::placeholder {
+            font-weight: 600;
+          }
+
+          &:focus {
+            outline-width: 1px;
+            outline-color: rgba($gray, 0.7);
+          }
         }
 
         .error-icon {
           display: none;
         }
 
-        // error elements styling
+        .error-icon-active {
+          display: inline-block;
+          position: absolute;
+          right: 1rem;
+          width: 1.1rem;
+          top: 40%;
+          transform: translateY(-50%);
+        }
+
+        // error message styling
 
         .error {
           font-size: 0.7rem;
@@ -127,20 +147,12 @@ main {
           color: $red;
           font-weight: 500;
           font-style: italic;
-          margin-bottom: 0.3em;
+          margin-bottom: 0;
         }
 
         .error-display {
           border: 1px solid $red;
         }
-
-        // .error-icon-active {
-        //   position: absolute;
-        //   right: 1rem;
-        //   transform: translateY(-240%);
-        //   height: 1.2rem;
-        //   width: 1.2rem;
-        // }
       }
 
       &__btn {

@@ -1,4 +1,4 @@
-// loading form elements
+// ================= loading form elements ============================
 let first__name = document.getElementById("first-name");
 let last__name = document.getElementById("last-name");
 let email__data = document.getElementById("email");
@@ -10,7 +10,7 @@ btn.addEventListener("click", (event) => {
   validateFormInputs(event);
 });
 
-// basic form validation
+// ===================== basic form validation ========================
 function validateFormInputs(event__data) {
   let isFormValid = true;
 
@@ -47,20 +47,22 @@ function validateFormInputs(event__data) {
   }
 }
 
-// checking validity of email with regex
+// ================ checking validity of email with regex ===============
 function isEmailValid(email) {
   const email__pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return email__pattern.test(email);
 }
 
-// displaying errors
+// ==================== displaying errors ===============================
 function displayError(ui__element, message) {
-  let error__element = document.createElement("div");
+  let error__message = document.createElement("div");
+  error__message.className = "error";
+  error__message.innerText = message;
 
-  // setting error elements' class
-  error__element.className = "error";
+  // Create or select an error icon for this field
+  let icon = ui__element.parentNode.querySelector(".error-icon");
+  icon.className = "error-icon-active";
+
   ui__element.className = "error-display";
-
-  error__element.innerText = message;
-  ui__element.parentNode.insertBefore(error__element, ui__element.nextSibling);
+  ui__element.parentNode.insertBefore(error__message, ui__element.nextSibling);
 }
