@@ -153,6 +153,10 @@ main {
         .error-display {
           border: 1px solid $red;
         }
+
+        input#email.error-display::placeholder {
+          color: $red;
+        }
       }
 
       &__btn {

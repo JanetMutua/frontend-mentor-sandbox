@@ -138,6 +138,9 @@ main {
 .hero__form .form .input-fields .error-display {
   border: 1px solid hsl(0, 100%, 74%);
 }
+.hero__form .form .input-fields input#email.error-display::placeholder {
+  color: hsl(0, 100%, 74%);
+}
 .hero__form .form__btn {
   width: 100%;
   padding: 1rem 0;

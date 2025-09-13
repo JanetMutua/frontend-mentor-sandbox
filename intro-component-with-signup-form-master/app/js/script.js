@@ -18,28 +18,26 @@ function validateFormInputs(event__data) {
   if (first__name.value.trim() === "") {
     isFormValid = false;
     displayError(first__name, "First Name cannot be empty");
-    console.log("hey");
   }
 
   // check if last name is filled
   if (last__name.value.trim() === "") {
     isFormValid = false;
     displayError(last__name, "Last Name cannot be empty");
-    console.log("hey 2");
   }
 
   // check if email entered is valid
   if (!isEmailValid(email__data.value)) {
     isFormValid = false;
+    email__data.value = "";
+    email__data.placeholder = "email@example/com";
     displayError(email__data, "Looks like this is not an email");
-    console.log("hey 3");
   }
 
   // check if password is 8 characters long
   if (password.value < 8) {
     isFormValid = false;
     displayError(password, "Password cannot be empty");
-    console.log("hey 4");
   }
 
   if (!isFormValid) {
