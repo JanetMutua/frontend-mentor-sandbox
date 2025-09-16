@@ -9,9 +9,8 @@
 }
 
 body {
-  border: 3px solid red;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background-color: hsl(233, 47%, 7%);
   color: white;
   font-size: 15px;
@@ -19,25 +18,23 @@ body {
 
 .card {
   width: 100%;
-  max-width: 750px;
+  max-width: 700px;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 3em;
+  gap: 1.5em;
   margin: 8rem auto;
   background-color: hsl(244, 37%, 16%);
-  border-radius: 0.5rem;
-  border: 2px solid red;
+  border-radius: 0.3rem;
 }
 .card__left {
   width: 50%;
   height: auto;
-  border: 2px solid red;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
 }
 .card__left .card__header {
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-family: "Inter", Poppins;
   font-weight: 700;
 }
@@ -45,14 +42,14 @@ body {
   color: hsl(277, 64%, 61%);
 }
 .card__left .card__text {
-  margin-top: 1em;
-  font-family: "Inter", Poppins;
+  margin-top: 1.2em;
+  font-family: "Lexend Deca";
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 0.75em;
   color: hsla(0, 0%, 100%, 0.75);
 }
 .card__left .card__metrics {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -61,13 +58,15 @@ body {
   display: block;
   font-weight: 700;
   font-family: "Inter", Poppins;
-  font-size: 1.1em;
+  font-size: 1.3em;
+  color: hsl(0, 0%, 100%);
 }
 .card__left .card__metrics .category {
   display: block;
+  margin-top: 0.4em;
   text-transform: uppercase;
   font-family: "Lexend Deca";
-  color: hsla(0, 0%, 100%, 0.75);
+  color: hsla(0, 0%, 100%, 0.6);
   font-size: 0.7em;
 }
 .card__right {
@@ -83,7 +82,8 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(170.4012, 91.902, 219.198, 0.55);
-  border-radius: 0 0.5rem 0.5rem 0;
+  filter: saturate(1.5);
+  border-radius: 0 0.3rem 0.3rem 0;
   z-index: 1;
   pointer-events: none;
 }
@@ -91,7 +91,42 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+
+@media (max-width: 750px) {
+  .card {
+    width: 95%;
+    height: auto;
+  }
+}
+@media (max-width: 680px) {
+  .card {
+    flex-direction: column-reverse;
+    width: 90%;
+    max-width: 400px;
+  }
+  .card__left {
+    width: 100%;
+    text-align: center;
+  }
+  .card__right {
+    width: 100%;
+    border-radius: 0.3rem 0.3rem 0 0;
+  }
+  .card__right img {
+    border-radius: 0.3rem 0.3rem 0 0;
+  }
+}
+@media (max-width: 450px) {
+  .card {
+    width: 80%;
+  }
+  .card__metrics {
+    width: 100%;
+    flex-direction: column;
+    gap: 2em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

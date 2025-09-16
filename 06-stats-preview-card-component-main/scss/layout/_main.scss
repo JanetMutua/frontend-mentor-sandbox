@@ -9,9 +9,8 @@
 }
 
 body {
-  border: 3px solid red;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background-color: $navy;
   color: white;
   font-size: 15px;
@@ -19,25 +18,23 @@ body {
 
 .card {
   width: 100%;
-  max-width: 750px;
+  max-width: 700px;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 3em;
+  gap: 1.5em;
   margin: 8rem auto;
   background-color: $blue;
   border-radius: $radius;
-  border: 2px solid red;
 
   &__left {
     width: 50%;
     height: auto;
-    border: 2px solid red;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
 
     .card__header {
-      font-size: 1.5em;
+      font-size: 1.6em;
       font-family: $inter;
       font-weight: 700;
 
@@ -47,15 +44,15 @@ body {
     }
 
     .card__text {
-      margin-top: 1em;
-      font-family: $inter;
+      margin-top: 1.2em;
+      font-family: $lexend;
       font-weight: 400;
-      font-size: 0.8em;
+      font-size: 0.75em;
       color: $white-para;
     }
 
     .card__metrics {
-      margin-top: 3rem;
+      margin-top: 2.5rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -64,14 +61,16 @@ body {
         display: block;
         font-weight: 700;
         font-family: $inter;
-        font-size: 1.1em;
+        font-size: 1.3em;
+        color: $white-heading;
       }
 
       .category {
         display: block;
+        margin-top: 0.4em;
         text-transform: uppercase;
         font-family: $lexend;
-        color: $white-para;
+        color: $white-stats;
         font-size: 0.7em;
       }
     }
@@ -81,8 +80,6 @@ body {
     width: 55%;
     height: 100%;
     position: relative;
-    // background-color: $purple;
-    // border-radius: 0 $radius $radius 0;
 
     &::before {
       content: "";
@@ -92,6 +89,7 @@ body {
       width: 100%;
       height: 100%;
       background: rgba($purple, 0.55);
+      filter: saturate(1.5);
       border-radius: 0 $radius $radius 0;
       z-index: 1;
       pointer-events: none;
@@ -102,7 +100,46 @@ body {
       height: 100%;
       object-fit: contain;
       border-radius: 0 $radius $radius 0;
-      // opacity: 0.6;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .card {
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .card {
+    flex-direction: column-reverse;
+    width: 90%;
+    max-width: 400px;
+
+    &__left {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__right {
+      width: 100%;
+      border-radius: $radius $radius 0 0;
+
+      img {
+        border-radius: $radius $radius 0 0;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .card {
+    width: 80%;
+
+    &__metrics {
+      width: 100%;
+      flex-direction: column;
+      gap: 2em;
     }
   }
 }
