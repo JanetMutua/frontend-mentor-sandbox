@@ -1,4 +1,8 @@
 // importing fonts
+// Inter
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+// Lexend deca
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 
 // theme colors
 
@@ -10,5 +14,8 @@ $white-para: hsla(0, 0%, 100%, 0.75);
 $white-stats: hsla(0, 0%, 100%, 0.6);
 
 // border radius
-
 $radius: 0.5rem;
+
+// font family
+$inter: "Inter", Poppins;
+$lexend: "Lexend Deca";

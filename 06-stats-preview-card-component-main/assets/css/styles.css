@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 *,
 *::before,
 *::after {
@@ -8,35 +10,88 @@
 
 body {
   border: 3px solid red;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: hsl(233, 47%, 7%);
   color: white;
+  font-size: 15px;
 }
 
 .card {
-  width: 80%;
-  height: fit-content;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 6rem auto;
+  gap: 3em;
+  margin: 8rem auto;
   background-color: hsl(244, 37%, 16%);
   border-radius: 0.5rem;
   border: 2px solid red;
 }
 .card__left {
   width: 50%;
+  height: auto;
+  border: 2px solid red;
+  padding: 2rem;
+}
+.card__left .card__header {
+  font-size: 1.5em;
+  font-family: "Inter", Poppins;
+  font-weight: 700;
+}
+.card__left .card__header__colored {
+  color: hsl(277, 64%, 61%);
+}
+.card__left .card__text {
+  margin-top: 1em;
+  font-family: "Inter", Poppins;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.card__left .card__metrics {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__left .card__metrics .data {
+  display: block;
+  font-weight: 700;
+  font-family: "Inter", Poppins;
+  font-size: 1.1em;
+}
+.card__left .card__metrics .category {
+  display: block;
+  text-transform: uppercase;
+  font-family: "Lexend Deca";
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.7em;
 }
 .card__right {
-  width: 50%;
+  width: 55%;
+  height: 100%;
+  position: relative;
+}
+.card__right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(170.4012, 91.902, 219.198, 0.55);
+  border-radius: 0 0.5rem 0.5rem 0;
+  z-index: 1;
+  pointer-events: none;
 }
 .card__right img {
   width: 100%;
   height: 100%;
-  border-radius: 0 0.5rem 0.5rem 0;
   object-fit: contain;
-  background-color: hsl(277, 64%, 61%);
+  border-radius: 0 0.5rem 0.5rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
