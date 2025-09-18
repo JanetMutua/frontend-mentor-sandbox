@@ -13,7 +13,8 @@
     />
 
     <title>Frontend Mentor | 3-column preview card component</title>
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -26,39 +27,43 @@
     </style>
   </head>
   <body>
-    <main class="card">
-      <!-- first column -->
-      <section class="card__column one">
-        <div class="card__icon"></div>
-        <h1 class="card__title">Sedans</h1>
-        <p class="card__text">
-          Choose a sedan for its affordability and excellent fuel economy. Ideal
-          for cruising in the city or on your next road trip.
-        </p>
-        <button class="card__button" type="button">Learn more</button>
-      </section>
+    <main>
+      <div class="card">
+        <!-- first column -->
+        <section class="column-one">
+          <div class="card__icon icon-one"></div>
+          <h1 class="card__title">Sedans</h1>
+          <p class="card__text">
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip.
+          </p>
+          <button class="card__button btn-one" type="button">Learn more</button>
+        </section>
 
-      <!-- second column -->
-      <section class="card__column two">
-        <div class="card__icon"></div>
-        <h1 class="card__title">SUVs</h1>
-        <p class="card__text">
-          Take an SUV for its spacious interior, power, and versatility. Perfect
-          for your next family vacation and off-road adventures.
-        </p>
-        <button class="card__button" type="button">Learn more</button>
-      </section>
+        <!-- second column -->
+        <section class="column-two">
+          <div class="card__icon icon-two"></div>
+          <h1 class="card__title">SUVs</h1>
+          <p class="card__text">
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+          <button class="card__button btn-two" type="button">Learn more</button>
+        </section>
 
-      <!-- third column -->
-      <section class="card__column three">
-        <div class="card__icon"></div>
-        <h1 class="card__title">Luxury</h1>
-        <p class="card__text">
-          Cruise in the best car brands without the bloated prices. Enjoy the
-          enhanced comfort of a luxury rental and arrive in style.
-        </p>
-        <button class="card__button" type="button">Learn more</button>
-      </section>
+        <!-- third column -->
+        <section class="column-three">
+          <div class="card__icon icon-three"></div>
+          <h1 class="card__title">Luxury</h1>
+          <p class="card__text">
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+          <button class="card__button btn-three" type="button">
+            Learn more
+          </button>
+        </section>
+      </div>
     </main>
 
     <footer>
