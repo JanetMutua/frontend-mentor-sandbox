@@ -20,7 +20,7 @@ body {
   max-width: 720px;
   width: 90%;
   height: auto;
-  margin: 4rem auto;
+  margin: 8rem auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -73,11 +73,6 @@ body {
     transform: scaleY(1.8);
     font-weight: 400;
     word-spacing: -9rem;
-
-    &:hover {
-      font-style: oblique;
-      box-shadow: rgba($gray, 0.2);
-    }
   }
 
   &__text {
