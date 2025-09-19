@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 28px;
+  font-family: "Manrope", poppins;
+  font-weight: 800;
+  background-color: hsl(218, 23%, 16%);
+  width: 100dvw;
+  height: 100dvh;
+  color: hsl(193, 38%, 86%);
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 0.8em;
+  border-radius: 0.8rem;
+  background-color: hsl(217, 19%, 24%);
+  margin: 3em auto;
+  text-align: center;
+}
+.card__title {
+  font-size: 0.5em;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  color: hsl(150, 100%, 66%);
+}
+.card__text {
+  margin-top: 1.8rem;
+}
+.card__divider .mobile {
+  display: none;
+}
+.card__divider .desktop {
+  margin: 2rem 0;
+  width: 80%;
+}
+.card__divider__dice {
+  position: absolute;
+  bottom: -40px;
+  width: 2rem;
+  height: 2rem;
+  left: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

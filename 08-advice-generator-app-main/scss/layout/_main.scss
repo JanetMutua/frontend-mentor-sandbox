@@ -1,0 +1,62 @@
+@use "../abstract/variables" as *;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 28px;
+  font-family: $font-manrope;
+  font-weight: 800;
+  background-color: $blue-950;
+  width: 100dvw;
+  height: 100dvh;
+  color: $blue-200;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 0.8em;
+  border-radius: 0.8rem;
+  background-color: $blue-900;
+  margin: 3em auto;
+  text-align: center;
+  //   overflow: hidden;
+
+  &__title {
+    font-size: 0.5em;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: $green;
+  }
+
+  &__text {
+    margin-top: 1.8rem;
+  }
+
+  &__divider {
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      margin: 2rem 0;
+      width: 80%;
+    }
+
+    &__dice {
+      position: absolute;
+      bottom: -40px;
+      width: 2rem;
+      height: 2rem;
+      left: 50%;
+    }
+  }
+}
