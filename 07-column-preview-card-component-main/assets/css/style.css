@@ -8,48 +8,66 @@
 }
 
 body {
-  border: 2px solid red;
   width: 100dvw;
   height: 100dvh;
   background-color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display";
   font-size: 15px;
-  overflow: hidden;
 }
 
 .card {
-  max-width: 680px;
+  max-width: 720px;
+  width: 90%;
   height: auto;
   margin: 4rem auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-radius: 0.4rem;
 }
 .card__icon {
-  width: 2rem;
+  width: 3rem;
   height: 2rem;
-  background-color: rgba(242.25, 242.25, 242.25, 0.9);
-  border-radius: 50%;
+  margin-top: 1.2rem;
+}
+.card__icon:hover {
+  transform: rotate(20deg);
+  transition: all 0.3s ease;
 }
 .card .column-one {
   background-color: hsl(31, 77%, 52%);
   padding: 1rem 1.5rem;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+.card .column-one .btn-one {
+  color: hsl(31, 77%, 52%);
 }
 .card .column-two {
   background-color: hsl(184, 100%, 22%);
   padding: 1rem 1.5rem;
 }
+.card .column-two .btn-two {
+  color: hsl(184, 100%, 22%);
+}
 .card .column-three {
   background-color: hsl(179, 100%, 13%);
   padding: 1rem 1.5rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+.card .column-three .btn-three {
+  color: hsl(179, 100%, 13%);
 }
 .card__title {
   color: hsl(0, 0%, 95%);
   text-transform: uppercase;
-  margin-top: 1.5rem;
+  margin-top: 1.9rem;
   font-family: "Lexend Deca";
-  transform: scaleY(1.7);
+  transform: scaleY(1.8);
   font-weight: 400;
+  word-spacing: -9rem;
+}
+.card__title:hover {
+  font-style: oblique;
+  box-shadow: rgba(242.25, 242.25, 242.25, 0.2);
 }
 .card__text {
   color: hsla(0, 0%, 100%, 0.75);
@@ -58,12 +76,40 @@ body {
 }
 .card__button {
   background-color: hsl(0, 0%, 95%);
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 1.5rem;
   border: none;
   cursor: pointer;
   outline: none;
-  margin: 2.5rem auto;
+  margin: 4rem auto 1rem;
+}
+.card__button:hover {
+  border: 1px solid hsl(0, 0%, 95%);
+  background: transparent;
+  color: hsl(0, 0%, 95%) !important;
+  transition: all 0.3s ease-in;
+}
+
+@media (max-width: 550px) {
+  .card {
+    width: 70%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .card__button {
+    margin: 1rem auto;
+  }
+  .card .column-one,
+  .card .column-two,
+  .card .column-three {
+    padding: 1.6rem;
+  }
+  .card .column-one {
+    border-radius: 0.4rem 0.4rem 0 0;
+  }
+  .card .column-three {
+    border-radius: 0 0 0.4rem 0.4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

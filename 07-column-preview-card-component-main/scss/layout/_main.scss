@@ -9,55 +9,75 @@
 }
 
 body {
-  border: 2px solid red;
   width: 100dvw;
   height: 100dvh;
   background-color: $gray;
+  font-family: $font-big-shoulders;
   font-size: 15px;
-  overflow: hidden;
 }
 
 .card {
-  max-width: 680px;
+  max-width: 720px;
+  width: 90%;
   height: auto;
   margin: 4rem auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-radius: 0.4rem;
 
   &__icon {
-    width: 2rem;
+    width: 3rem;
     height: 2rem;
-    background-color: rgba($gray, 0.9);
-    border-radius: 50%;
+    margin-top: 1.2rem;
+
+    &:hover {
+      transform: rotate(20deg);
+      transition: all 0.3s ease;
+    }
   }
 
   .column-one {
     background-color: $gold;
     padding: 1rem 1.5rem;
+    border-radius: 0.4rem 0 0 0.4rem;
 
-    .icon-one {
+    .btn-one {
+      color: $gold;
     }
   }
 
   .column-two {
     background-color: $cyan;
     padding: 1rem 1.5rem;
+
+    .btn-two {
+      color: $cyan;
+    }
   }
 
   .column-three {
     background-color: $green;
     padding: 1rem 1.5rem;
+    border-radius: 0 0.4rem 0.4rem 0;
+
+    .btn-three {
+      color: $green;
+    }
   }
 
   &__title {
     color: $gray;
     text-transform: uppercase;
-    margin-top: 1.5rem;
+    margin-top: 1.9rem;
     font-family: $font-lexend;
-    transform: scaleY(1.7);
+    transform: scaleY(1.8);
     font-weight: 400;
+    word-spacing: -9rem;
+
+    &:hover {
+      font-style: oblique;
+      box-shadow: rgba($gray, 0.2);
+    }
   }
 
   &__text {
@@ -68,11 +88,45 @@ body {
 
   &__button {
     background-color: $gray;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 1.5rem;
     border: none;
     cursor: pointer;
     outline: none;
-    margin: 2.5rem auto;
+    margin: 4rem auto 1rem;
+
+    &:hover {
+      border: 1px solid $gray;
+      background: transparent;
+      color: $gray !important;
+      transition: all 0.3s ease-in;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .card {
+    width: 70%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // border-radius: 0.5rem;
+
+    &__button {
+      margin: 1rem auto;
+    }
+
+    .column-one,
+    .column-two,
+    .column-three {
+      padding: 1.6rem;
+    }
+
+    .column-one {
+      border-radius: 0.4rem 0.4rem 0 0;
+    }
+
+    .column-three {
+      border-radius: 0 0 0.4rem 0.4rem;
+    }
   }
 }
